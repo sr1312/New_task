@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://www.chegusinfotech.com/html_en/about/gallery.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chegus Infotech</title>
+    <link href="./Chegus Infotech_files/style1.css" rel="stylesheet" type="text/css"><script src="./Chegus Infotech_files/jquery-1.10.2.js" type="text/javascript"></script><script src="./Chegus Infotech_files/script.js" type="text/javascript"></script><script type="text/javascript" src="./Chegus Infotech_files/jssor.js"></script><script type="text/javascript" src="./Chegus Infotech_files/jssor.slider.js"></script><link rel="stylesheet" href="./Chegus Infotech_files/jquery-ui.css"><script src="./Chegus Infotech_files/jquery-1.10.2(1).js"></script><script src="./Chegus Infotech_files/jquery-ui.js"></script><link rel="stylesheet" href="./Chegus Infotech_files/style.css"><style>
+        /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 13px;
+            background: url(../../img/b03.png) no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb03 div { background-position: -5px -4px; }
+        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+        .jssorb03 .av { background-position: -65px -4px; }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+    </style><style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row > .column {
+            padding: 8px;
+            text-align: center;
+            background: #fff;
+            margin: 5px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 23%;
+            padding: 6px;
+            background: #868686;
+            margin: 5px;
+        }
+        input[type='submit'], input[type='button'] {
+            background-color: #4285F4;
+            color: #FFFFFF;
+            font-weight: bold;
+            border: 1px solid #4285f4;
+            border-radius: 5px;
+            margin-right: 60px;
+        }
+        input[type='submit']:hover, input[type='button']:hover {
+            background-color: #f58430;
+            font-weight: bold;
+            border: 1px solid #f58430;
+            border-radius: 5px;
+            margin-right: 60px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        img {
+            margin-bottom: -4px;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        dialog{
+            width: 90%;
+        }
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+        .backButton{
+            margin-top: -10px;
+            padding: 6px;
+            float: right;
+        }
+        .divhome {
+            /* background-color: #4285F4; */
+            background-color: #DDE8FF;
+            float: left;
+            display: inline;
+            width: 1114px;
+            overflow-y: scroll;
+            height: 589px;
+        }
+        .Labelgallery {
+            background: #4285f4;
+            color: #fff;
+            width: fit-content;
+            vertical-align: middle;
+            font-size: 11px;
+            margin: 3px;
+            width: 100%;
+            /* width: 25%; */
+            border-radius: 2px;
+            padding: 3px;
+        }
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .imggalHeader {
+    background: #4285f4;
+    color: #fff;
+    padding: 6px 0px 6px 14px;
+    margin: 8px;
+    font-size: 14px;
+    border-radius: 7px;
+}
+    </style><script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    
+    </script><script>
+            
+    $(document).ready(function(){
+//    $(".imgGal").click(function(){
+//        $('.imageContainer').hide();
+//          $(".imageDiv1").show();
+//        
+//    });
+    $(".backButton").click(function(){
+        $('.BackClose').hide();
+        $('.column').show();
+        $('.imageContainer').show();
+    });
+    
+    $(".imgGal").click(function(){
+         var x = $(this).attr("id");
+       if( $(".imageDiv1").find("div").hasClass(x) )
+       {   
+          
+          $('.imageContainer').hide();
+          $('.column').hide();
+          $(".imageDiv1").show();
+          $(".imggalHeader").hide();
+          $("."+x).show();
+       }
+           
+        
+    });
+});
+    </script></head>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    <!-- sliderh style begin -->
+    
+    <!-- sliderh style end -->
+
+
+
+
+    
+
+
+    <!--image gallery code starts-->
+
+    
+    
+    
+    <!--image gallery code Ends-->
+
+
+
+
+    <body style="">
+        <div class="mainContainer">
+
+            <div class="divtoplinks">
+                <div class="divlinks">
+                    <div>&nbsp;<a href="https://www.facebook.com/profile.php?id=100011432631824" target="_blank"><input type="image" src="./Chegus Infotech_files/fb.png" title="Facebook"></a>&nbsp;<a href="https://twitter.com/ChegusInfotech" target="_blank"><input type="image" src="./Chegus Infotech_files/tw.png" title="Twitter"></a>&nbsp;<a href="https://profiles.google.com/110521456167898080824" target="_blank"><input type="image" src="./Chegus Infotech_files/gp.png" title="Google Plus"></a>&nbsp;<a href="https://www.linkedin.com/company/chegus-infotech" target="_blank"><input type="image" src="./Chegus Infotech_files/linkedin.png" title="LinkedIn"></a></div></div>
+                <div class="sellang">
+                    <div><a href="http://www.chegusinfotech.com/html_fr/about/gallery.html">French</a>&nbsp;/&nbsp;<a href="http://www.chegusinfotech.com/html_sp/about/gallery.html">Spanish</a></div></div>
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <div class="Logo"><a href="http://www.chegusinfotech.com/index.html"><img src="./Chegus Infotech_files/LOGO.png" width="151" height="64" alt="Chegus" title="Chegus Infotech"></a></div>
+                    <ul>
+                        <li><a href="http://www.chegusinfotech.com/index.html">HOME</a></li>
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">ABOUT US</a>
+                            <ul class="subnav" style="display: none;">
+                                <li><a href="http://www.chegusinfotech.com/html_en/about/aboutus.html">About us</a>
+                                </li><li><a href="http://www.chegusinfotech.com/html_en/about/management.html">Management</a>
+                            </li></ul></li>
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/visionmission.html">VISION AND MISSION</a></li>
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/careers.html">CAREERS</a></li>
+                        <li class="navactive"><a style="color:#4285F4;" href="http://www.chegusinfotech.com/html_en/about/gallery.html">GALLERY</a></li>
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">PRODUCTS</a>
+                            <ul class="subnav" style="display: none;">
+                                <li><a href="http://www.chegusinfotech.com/html_en/product/generalinsurance.html">GENIE - GEN (Non Life)</a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/product/lifeinsurance.html">GENIE - LIFE (Life)</a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/product/reinsurance.html">GENIE - RE (Reinsurance)</a></li>
+								<li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">GENIE - ERP (Commodities) </a></li>
+								<li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">GENIE - ERP (Manufacturing) </a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/product/technologies.html">Technologies</a></li>
+                            </ul></li>
+
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">NEWS</a>
+                            <ul class="subnav" style="display: none;">
+                                <li><a href="http://www.chegusinfotech.com/html_en/news/news.html">News and Events</a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/news/faq.html">FAQ</a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/news/Articles.html">Articles</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://www.chegusinfotech.com/html_en/about/gallery.html#">CONTACT</a>
+                            <ul class="subnav" style="display: none;">
+                                <li><a href="http://www.chegusinfotech.com/html_en/contact/contact.html">Contact Us</a></li>
+                                <li><a href="http://www.chegusinfotech.com/html_en/contact/queries.html">Queries</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of nav-->
+
+                <div class="divhome">
+                    <br>
+                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</h2>
+                   <div class="row imageContainer" style="display: none;"> <br>
+                       <div class="column" style="display: none;">
+                             <img src="./Chegus Infotech_files/01.jpg" id="Goa" style=" width: 100%;
+                                 height: 129px;" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery">Team Outing 2018 - Goa</p>
+                        </div>
+                       <div class="column" style="display: none;">
+                             <img src="./Chegus Infotech_files/02.jpg" id="Ghana45" style=" width: 100%;
+                                 height: 129px;" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery">The 45th AIO Conference </p>
+                        </div>
+                       <div class="column" style="display: none;">
+                             <img src="./Chegus Infotech_files/04.jpg" id="ClientOffice" style=" width: 100%;
+                                 height: 129px;" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery" style=" padding: 3px 70px 6px 70px;">Client At office</p>
+                        </div>
+                       <div class="column" style="display: none;">
+                             <img src="./Chegus Infotech_files/01(1).jpg" id="FANAF2018" style=" width: 100%;
+                                 height: 129px;" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery">42nd FANAF 2018</p>
+                        </div>
+                    </div>
+                    <div class="row imageContainer" style="display: none;">
+                        
+                        <div class="column" style="display: none;">
+                            <img src="./Chegus Infotech_files/it.jpg" id="ITSeminar" style="width:100%" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery" style=" padding: 3px 50px 6px 50px;">IT Seminar Bangladesh</p>
+                        </div>
+                        <div class="column" style="display: none;">
+                            <img src="./Chegus Infotech_files/aio.jpg" id="44thConf" style="width:100%" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery"> 44th AIO Conference</p>
+                        </div>
+                        <div class="column" style="display: none;">
+                            <img src="./Chegus Infotech_files/fanaf.jpg" id="FANAF1" style="width:100%" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery">41 FANAF - 2017</p>
+                        </div>
+                         <div class="column" style="display: none;">
+                            <img src="./Chegus Infotech_files/08.jpg" id="DAKAR" style="width:100%; height: 129px;" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery">21st  Reinsurance Forum </p>
+                        </div>
+                        
+                    </div>
+                     <div class="row imageContainer" style="display: none;">
+                        
+                        <div class="column" style="display: none;">
+                            <img src="./Chegus Infotech_files/01(2).jpg" id="AIF2017" style="width:100%" class="hover-shadow cursor imgGal">
+                            <p class="Labelgallery" style=" padding: 3px 50px 6px 50px;">2nd AIF-2017 Insurance Forum</p>
+                        </div>
+                        
+                        
+                    </div>
+                        
+                    <div class="imageDiv1 BackClose   " id="" style="display: block;">
+                        <input type="button" class="backButton" value="Back">
+                        <br> <br>  
+                       
+                        <div class="row ">
+                            <p class="imggalHeader ClientOffice" style="display: none;">Client At office</p>
+                           <!--Client at office starts-->
+                            <div class="column ClientOffice" style="display: none;">
+                                <img src="./Chegus Infotech_files/04.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ClientOffice" style="display: none;">
+                                <img src="./Chegus Infotech_files/03.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ClientOffice " style="display: none;">
+                                <img src="./Chegus Infotech_files/01(3).jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ClientOffice" style="display: none;">
+                                <img src="./Chegus Infotech_files/02(1).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                            </div>
+                            <!--Client at office Ends-->
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!--It Seminar starts-->
+                            
+                             <p class="imggalHeader ITSeminar" style="display: none;">IT Seminar by Chegus Infotech in Association with
+                                 Bangladesh Insurance Association” on 24th - 25th July 2017
+                                 at BIA Conference Hall, Dhaka, Bangladesh.</p>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/01(4).jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/02(2).jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                            </div> <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/03(1).jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/04(1).jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                            </div>
+                            
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/06.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/13.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/08(1).jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/09.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/10.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/11.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/12.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+                            </div>
+                          
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/15.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column ITSeminar" style="display: none;">
+                                <img src="./Chegus Infotech_files/16.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+                            </div>
+                    
+                             
+                             <!--It Seminar Ends-->
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             <!--AIO starts-->
+                              <p class="imggalHeader 44thConf" style="display: none;">44th AIO Co“The 44th Conference and Annual General Assembly of the African
+                                  Insurance Organisation (AIO)” from 21st - 24th May 2017, at the Common Wealth Speke Resort Munyonyo, 
+                                  Kampala, Uganda.<br><br>
+                                  <b>Theme:</b> “Furthering the Financial Inclusion Agenda of African Nations through Insurance”</p>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/01(5).jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/02(3).jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/03(2).jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/04(2).jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/05.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/06(1).jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/07.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/08(2).jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/09(1).jpg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/10(1).jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/11(1).jpg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column 44thConf" style="display: none;">
+                                 <img src="./Chegus Infotech_files/12(1).jpg" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+                             </div>
+                             <!--AIO Seminar Ends-->
+                            
+                             
+                             
+                             <!--FANAF starts-->
+                            <p class="imggalHeader FANAF1" style="display: none;">
+                            “The 41st Conference and General Assembly of the African Federation of Insurance Companies for African national
+                            law (FANAF)” from 13th -16th February 2017 at Palais des Congrès, Marrakech Morocco.<br><br>
+                             <b>Theme: </b>“New regulatory and operational challenges: What strategy for the African insurance?”
+                            </p>
+                            
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/01(6).jpg" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/02(4).jpg" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/03(3).jpg" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/04(3).jpg" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/05(1).jpg" style="width:100%" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/06(2).jpg" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/07(1).jpg" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/08(3).jpg" style="width:100%" onclick="openModal();currentSlide(38)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/09(2).jpg" style="width:100%" onclick="openModal();currentSlide(39)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/10(2).jpg" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF1" style="display: none;">
+                                 <img src="http://www.chegusinfotech.com/img/FANAF/11.jpg" style="width:100%" onclick="openModal();currentSlide(41)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/12(2).jpg" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF1" style="display: none;">
+                                 <img src="./Chegus Infotech_files/13(1).jpg" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor">
+                             </div>
+                             <!--FANAF Ends-->
+                             
+                             
+                             
+                             
+                             
+                             <!--DAKAR starts-->
+                             <p class="imggalHeader DAKAR" style="">
+                                 
+                                 “The 21st African Reinsurance Forum” from 2nd to 4th October 2016 at Hôtel King Fahd Palace 
+                                 (Former Méridien Président), Dakar, Senegal.<br><br><br>
+                                 <b>Theme :</b>“African insurance and Reinsurance facing new strategic choices’’.
+                                 
+                             </p>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/01(7).jpg" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/02(5).jpg" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/03(4).jpg" style="width:100%" onclick="openModal();currentSlide(46)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/04(4).jpg" style="width:100%" onclick="openModal();currentSlide(47)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/05(2).jpg" style="width:100%" onclick="openModal();currentSlide(48)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/06(3).jpg" style="width:100%" onclick="openModal();currentSlide(49)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/07(2).jpg" style="width:100%" onclick="openModal();currentSlide(50)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/08.jpg" style="width:100%" onclick="openModal();currentSlide(51)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column DAKAR" style="display: block;">
+                                 <img src="./Chegus Infotech_files/09(3).jpg" style="width:100%" onclick="openModal();currentSlide(52)" class="hover-shadow cursor">
+                             </div>
+                              
+                             <!--DAKAR Ends-->
+                             
+                             
+                             
+                             
+                              <!--FANAF2018 starts-->
+                               <p class="imggalHeader FANAF2018" style="display: none;">The 42nd Conference and General Assembly of the African
+                                   Federation of Insurance Companies for African national law
+                                   (FANAF)” from 12th -15th February 2018 at Kigali Convention Center, Kigali, Rwanda.<br><br><br>
+                                   <b> Theme: </b> "African Insurance on the Disruption Test ".</p>
+                             <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/01(1).jpg" style="width:100%" onclick="openModal();currentSlide(53)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/02(6).jpg" style="width:100%" onclick="openModal();currentSlide(54)" class="hover-shadow cursor">
+                             </div>
+                              <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/03(5).jpg" style="width:100%" onclick="openModal();currentSlide(55)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/04(5).jpg" style="width:100%" onclick="openModal();currentSlide(56)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/05(3).jpg" style="width:100%" onclick="openModal();currentSlide(57)" class="hover-shadow cursor">
+                             </div>
+                             <div class="column FANAF2018" style="display: none;">
+                                 <img src="./Chegus Infotech_files/06(4).jpg" style="width:100%" onclick="openModal();currentSlide(58)" class="hover-shadow cursor">
+                             </div>
+                            
+                              
+                             <!--FANAF2018 Ends-->
+                             
+                             
+                             
+                             
+                             
+                               <!--Ghana45 starts-->
+                               <p class="imggalHeader Ghana45" style="display: none;">The 45th Conference and Annual General Assembly of the African
+                                   Insurance Organisation (AIO)” from 6th - 9th May 2018, at at 
+                                   Labadi Beach Hotel, Accra, Ghana. <br><br>
+                                   <b> Theme: </b>  “Innovation, Risk, and the Future of Insurance in Emerging Markets”.
+                               </p>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/02.jpg" style="width:100%" onclick="openModal();currentSlide(60)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/03(6).jpg" style="width:100%" onclick="openModal();currentSlide(61)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/04(6).jpg" style="width:100%" onclick="openModal();currentSlide(62)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/05(4).jpg" style="width:100%" onclick="openModal();currentSlide(63)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/06(5).jpg" style="width:100%" onclick="openModal();currentSlide(64)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Ghana45" style="display: none;">
+                                   <img src="./Chegus Infotech_files/07(3).jpg" style="width:100%" onclick="openModal();currentSlide(65)" class="hover-shadow cursor">
+                               </div>
+                              
+                             <!--Ghana45 Ends-->
+                             
+                              
+                              <!--Ghana45 starts-->
+                               <p class="imggalHeader Goa" style="display: none;">Team Outing 2018 - Goa</p>
+                              <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/01.jpg" style="width:100%" onclick="openModal();currentSlide(66)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/02(7).jpg" style="width:100%" onclick="openModal();currentSlide(67)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/03(7).jpg" style="width:100%" onclick="openModal();currentSlide(68)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/04(7).jpg" style="width:100%" onclick="openModal();currentSlide(69)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/05(5).jpg" style="width:100%" onclick="openModal();currentSlide(70)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column Goa" style="display: none;">
+                                   <img src="./Chegus Infotech_files/06(6).jpg" style="width:100%" onclick="openModal();currentSlide(71)" class="hover-shadow cursor">
+                               </div>
+                               
+                              
+                             <!--Ghana45 Ends-->
+                             
+                             
+                             
+                             
+                             
+                             <!--AIF starts-->
+                               <p class="imggalHeader AIF2017" style="display: none;">The 2nd AIF-2017 African Insurance Forum” from 3rd – 4th March 2016 at 
+                                   Radisson Blu Hotel, Sandton Johannesburg, South Africa.</p>
+                              <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/01(2).jpg" style="width:100%" onclick="openModal();currentSlide(73)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/02(8).jpg" style="width:100%" onclick="openModal();currentSlide(74)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/03(8).jpg" style="width:100%" onclick="openModal();currentSlide(75)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/04(8).jpg" style="width:100%" onclick="openModal();currentSlide(76)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/05(6).jpg" style="width:100%" onclick="openModal();currentSlide(77)" class="hover-shadow cursor">
+                               </div>
+                               <div class="column AIF2017" style="display: none;">
+                                   <img src="./Chegus Infotech_files/06(7).jpg" style="width:100%" onclick="openModal();currentSlide(78)" class="hover-shadow cursor">
+                               </div>
+                               
+                              
+                             <!--AIF Ends-->
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                        </div>
+
+                        <div id="myModal" class="modal" style="display: none;">
+                            <span class="close cursor" onclick="closeModal()">×</span>
+                            <div class="modal-content">
+                           <!--Client at office starts-->
+                                <div class="mySlides ClientOffice" style="display: block;">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="./Chegus Infotech_files/04.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides ClientOffice" style="display: block;">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="./Chegus Infotech_files/03.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides ClientOffice" style="display: block;">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="./Chegus Infotech_files/01(3).jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides ClientOffice" style="display: block;">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="./Chegus Infotech_files/02(1).jpg" style="width:100%">
+                                </div>
+                            <!--Client at office Ends-->
+                           
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                             <!--It Seminar starts-->
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">1 / 16</div>
+                                 <img src="./Chegus Infotech_files/01(4).jpg" style="width:100%">
+                             </div>
+                              <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">2 / 16</div>
+                                 <img src="./Chegus Infotech_files/02(2).jpg" style="width:100%">
+                             </div>
+                              <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">3 / 16</div>
+                                 <img src="./Chegus Infotech_files/03(1).jpg" style="width:100%">
+                             </div>
+                              <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">4 / 16</div>
+                                 <img src="./Chegus Infotech_files/04(1).jpg" style="width:100%">
+                             </div>
+                              <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">5 / 16</div>
+                                 <img src="./Chegus Infotech_files/04(1).jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">8 / 16</div>
+                                 <img src="./Chegus Infotech_files/06.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">9 / 16</div>
+                                 <img src="./Chegus Infotech_files/08(1).jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">10 / 16</div>
+                                 <img src="./Chegus Infotech_files/09.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">11 / 16</div>
+                                 <img src="./Chegus Infotech_files/10.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">12 / 16</div>
+                                 <img src="./Chegus Infotech_files/11.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">13 / 16</div>
+                                 <img src="./Chegus Infotech_files/12.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">14 / 16</div>
+                                 <img src="./Chegus Infotech_files/13.jpg" style="width:100%">
+                             </div>
+                              <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">16 / 16</div>
+                                 <img src="./Chegus Infotech_files/15.jpg" style="width:100%">
+                             </div>
+                             <div class="mySlides ITSeminar" style="display: none;">
+                                 <div class="numbertext">16 / 16</div>
+                                 <img src="./Chegus Infotech_files/16.jpg" style="width:100%">
+                             </div>
+                              <!--It Seminar Ends-->
+                              
+                              
+                              
+                              
+                               <!--AIO Seminar Starts-->
+                               
+                               
+                                <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">1/ 12</div>
+                                    <img src="./Chegus Infotech_files/01(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">2/ 12</div>
+                                    <img src="./Chegus Infotech_files/02(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">3/ 12</div>
+                                    <img src="./Chegus Infotech_files/03(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">4/ 12</div>
+                                    <img src="./Chegus Infotech_files/04(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">5/ 12</div>
+                                    <img src="./Chegus Infotech_files/05.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">6/ 12</div>
+                                    <img src="./Chegus Infotech_files/06(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">7/ 12</div>
+                                    <img src="./Chegus Infotech_files/07.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">8/ 12</div>
+                                    <img src="./Chegus Infotech_files/08(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">9/ 12</div>
+                                    <img src="./Chegus Infotech_files/09(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">10/ 12</div>
+                                    <img src="./Chegus Infotech_files/10(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">11/ 12</div>
+                                    <img src="./Chegus Infotech_files/11(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides 44thConf" style="display: none;">
+                                    <div class="numbertext">12/ 12</div>
+                                    <img src="./Chegus Infotech_files/12(1).jpg" style="width:100%">
+                                </div>
+                               <!--AIO Seminar Ends-->
+                              
+                              
+                              
+                              
+                              
+                              <!--FANAF Starts-->
+                               
+                               
+                                <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">1/ 12</div>
+                                    <img src="./Chegus Infotech_files/01(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">2/ 12</div>
+                                    <img src="./Chegus Infotech_files/02(4).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">3/ 12</div>
+                                    <img src="./Chegus Infotech_files/03(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">4/ 12</div>
+                                    <img src="./Chegus Infotech_files/04(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">5/ 12</div>
+                                    <img src="./Chegus Infotech_files/05(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: block;">
+                                    <div class="numbertext">6/ 12</div>
+                                    <img src="./Chegus Infotech_files/06(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">7/ 12</div>
+                                    <img src="./Chegus Infotech_files/07(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">8/ 12</div>
+                                    <img src="./Chegus Infotech_files/08(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">9/ 12</div>
+                                    <img src="./Chegus Infotech_files/09(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">10/ 12</div>
+                                    <img src="./Chegus Infotech_files/10(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">11/ 12</div>
+                                    <img src="http://www.chegusinfotech.com/img/FANAF/11.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">12/ 12</div>
+                                    <img src="./Chegus Infotech_files/12(2).jpg" style="width:100%">
+                                </div>
+                              <div class="mySlides FANAF1" style="display: none;">
+                                    <div class="numbertext">12/ 12</div>
+                                    <img src="./Chegus Infotech_files/13(1).jpg" style="width:100%">
+                                </div>
+                               <!--FANAF Ends-->
+                             
+                              
+                              
+                              
+                               
+                               
+                                <!--Dakar Starts-->
+                               
+                               
+                                <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">1/ 12</div>
+                                    <img src="./Chegus Infotech_files/01(7).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">2/ 12</div>
+                                    <img src="./Chegus Infotech_files/02(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">3/ 12</div>
+                                    <img src="./Chegus Infotech_files/03(4).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">4/ 12</div>
+                                    <img src="./Chegus Infotech_files/04(4).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">5/ 12</div>
+                                    <img src="./Chegus Infotech_files/05(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">6/ 12</div>
+                                    <img src="./Chegus Infotech_files/06(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">7/ 12</div>
+                                    <img src="./Chegus Infotech_files/07(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">8/ 12</div>
+                                    <img src="./Chegus Infotech_files/08.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides DAKAR" style="display: block;">
+                                    <div class="numbertext">9/ 12</div>
+                                    <img src="./Chegus Infotech_files/09(3).jpg" style="width:100%">
+                                </div>
+                               
+                               <!--Dakar Ends-->
+                               
+                               
+                               
+                               
+                               <!--FANAF2018 Starts-->
+                               
+                               
+                                <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">1/ 6</div>
+                                    <img src="./Chegus Infotech_files/01(1).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">2/ 6</div>
+                                    <img src="./Chegus Infotech_files/02(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">3/ 6</div>
+                                    <img src="./Chegus Infotech_files/03(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">4/ 6</div>
+                                    <img src="./Chegus Infotech_files/04(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">5/ 6</div>
+                                    <img src="./Chegus Infotech_files/05(3).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides FANAF2018" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/06(4).jpg" style="width:100%">
+                                </div>
+                               
+                               
+                               <!--FANAF2018 Ends-->
+                               
+                               
+                               <!--Ghana Starts-->
+                               
+                               
+                                <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">1/ 6</div>
+                                    <img src="./Chegus Infotech_files/01(8).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">2/ 6</div>
+                                    <img src="./Chegus Infotech_files/02.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">3/ 6</div>
+                                    <img src="./Chegus Infotech_files/03(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">4/ 6</div>
+                                    <img src="./Chegus Infotech_files/04(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">5/ 6</div>
+                                    <img src="./Chegus Infotech_files/05(4).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/06(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Ghana45" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/07(3).jpg" style="width:100%">
+                                </div>
+                               
+                               
+                               <!--Ghana Ends-->
+                               
+                                <!--Goa Starts-->
+                               
+                               
+                                <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">1/ 6</div>
+                                    <img src="./Chegus Infotech_files/01.jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">2/ 6</div>
+                                    <img src="./Chegus Infotech_files/02(7).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">3/ 6</div>
+                                    <img src="./Chegus Infotech_files/03(7).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">4/ 6</div>
+                                    <img src="./Chegus Infotech_files/04(7).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">5/ 6</div>
+                                    <img src="./Chegus Infotech_files/05(5).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/06(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides Goa" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/07(4).jpg" style="width:100%">
+                                </div>
+                               
+                               
+                               <!--Goa Ends-->
+                               
+                               
+                               
+                                <!--AIF Starts-->
+                               
+                               
+                                <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">1/ 6</div>
+                                    <img src="./Chegus Infotech_files/01(2).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">2/ 6</div>
+                                    <img src="./Chegus Infotech_files/02(8).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">3/ 6</div>
+                                    <img src="./Chegus Infotech_files/03(8).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">4/ 6</div>
+                                    <img src="./Chegus Infotech_files/04(8).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">5/ 6</div>
+                                    <img src="./Chegus Infotech_files/05(6).jpg" style="width:100%">
+                                </div>
+                               <div class="mySlides AIF2017" style="display: none;">
+                                    <div class="numbertext">6/ 6</div>
+                                    <img src="./Chegus Infotech_files/06(7).jpg" style="width:100%">
+                                </div>
+                               
+                               
+                               <!--AIF Ends-->
+                           
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+                                 <!--Client at office starts-->
+                                <div class="column ClientOffice" style="display: none;">
+                                    <img class="demo cursor" src="./Chegus Infotech_files/04.jpg" style="width:100%" onclick="currentSlide(1)">
+                                </div>
+                                <div class="column ClientOffice" style="display: none;">
+                                    <img class="demo cursor" src="./Chegus Infotech_files/03.jpg" style="width:100%" onclick="currentSlide(2)">
+                                </div>
+                                <div class="column ClientOffice" style="display: none;">
+                                    <img class="demo cursor" src="./Chegus Infotech_files/01(3).jpg" style="width:100%" onclick="currentSlide(3)">
+                                </div>
+                                <div class="column ITSeminar" style="display: none;">
+                                    <img class="demo cursor" src="./Chegus Infotech_files/02(1).jpg" style="width:100%" onclick="currentSlide(4)">
+                                </div>
+                                  <!--Client at office Ends-->
+                                  
+                                  
+                                    <!--It Seminar starts-->
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01(4).jpg" style="width:100%" onclick="currentSlide(5)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(2).jpg" style="width:100%" onclick="currentSlide(6)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(1).jpg" style="width:100%" onclick="currentSlide(7)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(1).jpg" style="width:100%" onclick="currentSlide(8)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(7).jpg" style="width:100%" onclick="currentSlide(9)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/08(1).jpg" style="width:100%" onclick="currentSlide(11)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/09.jpg" style="width:100%" onclick="currentSlide(12)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/10.jpg" style="width:100%" onclick="currentSlide(13)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/11.jpg" style="width:100%" onclick="currentSlide(14)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/12.jpg" style="width:100%" onclick="currentSlide(15)">
+                                    </div>
+                                    <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/13.jpg" style="width:100%" onclick="currentSlide(16)">
+                                    </div>
+                                     <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/15.jpg" style="width:100%" onclick="currentSlide(17)">
+                                    </div>
+                                     <div class="column ITSeminar" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/16.jpg" style="width:100%" onclick="currentSlide(18)">
+                                    </div>
+                                      <!--It Seminar Ends-->
+                                      
+                                      
+                                    
+                                      
+                                      <!--AIO 44 starts-->
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01(5).jpg" style="width:100%" onclick="currentSlide(19)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(3).jpg" style="width:100%" onclick="currentSlide(20)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(2).jpg" style="width:100%" onclick="currentSlide(21)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(2).jpg" style="width:100%" onclick="currentSlide(22)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05.jpg" style="width:100%" onclick="currentSlide(23)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(1).jpg" style="width:100%" onclick="currentSlide(24)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/07.jpg" style="width:100%" onclick="currentSlide(25)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/08(2).jpg" style="width:100%" onclick="currentSlide(26)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/09(1).jpg" style="width:100%" onclick="currentSlide(27)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/10(1).jpg" style="width:100%" onclick="currentSlide(28)">
+                                    </div>
+                                    <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/11(1).jpg" style="width:100%" onclick="currentSlide(29)">
+                                    </div>
+                                     <div class="column 44thConf" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/12(1).jpg" style="width:100%" onclick="currentSlide(30)">
+                                    </div>
+                                      <!--AIO 44 Ends-->
+                                      
+                                      
+                                      
+                                        
+                                      <!--FANAF starts-->
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01(6).jpg" style="width:100%" onclick="currentSlide(31)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(4).jpg" style="width:100%" onclick="currentSlide(32)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(3).jpg" style="width:100%" onclick="currentSlide(33)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(3).jpg" style="width:100%" onclick="currentSlide(34)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(1).jpg" style="width:100%" onclick="currentSlide(35)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(2).jpg" style="width:100%" onclick="currentSlide(36)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor active" src="./Chegus Infotech_files/07(1).jpg" style="width:100%" onclick="currentSlide(37)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/08(3).jpg" style="width:100%" onclick="currentSlide(38)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/09(2).jpg" style="width:100%" onclick="currentSlide(39)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/10(2).jpg" style="width:100%" onclick="currentSlide(40)">
+                                    </div>
+                                    <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="http://www.chegusinfotech.com/img/FANAF/11.jpg" style="width:100%" onclick="currentSlide(41)">
+                                    </div>
+                                     <div class="column FANAF1" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/12(2).jpg" style="width:100%" onclick="currentSlide(42)">
+                                    </div>
+                                      <!--FANAF Ends-->
+                                      
+                                      
+                                      <!--DAKAR starts-->
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01(7).jpg" style="width:100%" onclick="currentSlide(44)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(5).jpg" style="width:100%" onclick="currentSlide(45)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(4).jpg" style="width:100%" onclick="currentSlide(46)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(4).jpg" style="width:100%" onclick="currentSlide(47)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(2).jpg" style="width:100%" onclick="currentSlide(48)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(3).jpg" style="width:100%" onclick="currentSlide(49)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/07(2).jpg" style="width:100%" onclick="currentSlide(50)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/08.jpg" style="width:100%" onclick="currentSlide(51)">
+                                    </div>
+                                    <div class="column DAKAR" style="display: block;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/09(3).jpg" style="width:100%" onclick="currentSlide(52)">
+                                    </div>
+                                    
+                                      <!--DAKAR Ends-->
+                                      
+                                       <!--DAKAR starts-->
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01(1).jpg" style="width:100%" onclick="currentSlide(53)">
+                                    </div>
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(6).jpg" style="width:100%" onclick="currentSlide(54)">
+                                    </div>
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(5).jpg" style="width:100%" onclick="currentSlide(55)">
+                                    </div>
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(5).jpg" style="width:100%" onclick="currentSlide(56)">
+                                    </div>
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(3).jpg" style="width:100%" onclick="currentSlide(57)">
+                                    </div>
+                                    <div class="column FANAF2018" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(4).jpg" style="width:100%" onclick="currentSlide(58)">
+                                    </div>
+                                    
+                                    
+                                      <!--DAKAR Ends-->
+                                      
+                                      
+                                  <!--Ghana Starts-->
+                                    <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02.jpg" style="width:100%" onclick="currentSlide(60)">
+                                    </div>
+                                    <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(6).jpg" style="width:100%" onclick="currentSlide(61)">
+                                    </div>
+                                    <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(6).jpg" style="width:100%" onclick="currentSlide(62)">
+                                    </div>
+                                    <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(4).jpg" style="width:100%" onclick="currentSlide(63)">
+                                    </div>
+                                    <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(5).jpg" style="width:100%" onclick="currentSlide(64)">
+                                    </div>
+                                  <div class="column Ghana45" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/07(3).jpg" style="width:100%" onclick="currentSlide(65)">
+                                    </div>
+                                  <!--Ghana Ends-->
+                                  
+                                  
+                                  <!--Goa Starts-->
+                                  <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/01.jpg" style="width:100%" onclick="currentSlide(66)">
+                                    </div>
+                                    <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/02(7).jpg" style="width:100%" onclick="currentSlide(67)">
+                                    </div>
+                                    <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/03(7).jpg" style="width:100%" onclick="currentSlide(68)">
+                                    </div>
+                                    <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/04(7).jpg" style="width:100%" onclick="currentSlide(69)">
+                                    </div>
+                                    <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/05(5).jpg" style="width:100%" onclick="currentSlide(70)">
+                                    </div>
+                                    <div class="column Goa" style="display: none;">
+                                        <img class="demo cursor" src="./Chegus Infotech_files/06(6).jpg" style="width:100%" onclick="currentSlide(71)">
+                                    </div>
+                                  
+                                  <!--Goa Ends-->
+                                  
+                                  
+                                  <!--AIF Starts-->
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/01(2).jpg" style="width:100%" onclick="currentSlide(73)">
+                                  </div>
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/02(8).jpg" style="width:100%" onclick="currentSlide(74)">
+                                  </div>
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/03(8).jpg" style="width:100%" onclick="currentSlide(75)">
+                                  </div>
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/04(8).jpg" style="width:100%" onclick="currentSlide(76)">
+                                  </div>
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/05(6).jpg" style="width:100%" onclick="currentSlide(77)">
+                                  </div>
+                                  <div class="column AIF2017" style="display: none;">
+                                      <img class="demo cursor" src="./Chegus Infotech_files/06(7).jpg" style="width:100%" onclick="currentSlide(78)">
+                                  </div>
+                                  
+                                  <!--AIF Ends-->
+                                      
+                                      
+                                      
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <br><br><br>
+
+
+                    <!--    It Seminar starts-->
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">×</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides" style="display: none;">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="./Chegus Infotech_files/it.jpg" style="width:100%">
+
+                            </div>
+
+                            <div class="mySlides" style="display: none;">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="./Chegus Infotech_files/01(3).jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides" style="display: none;">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="./Chegus Infotech_files/02(1).jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides" style="display: none;">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="./Chegus Infotech_files/03.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides" style="display: none;">
+                                <div class="numbertext">5 / 4</div>
+                                <img src="./Chegus Infotech_files/04.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+
+                            <div class="column" style="display: none;">
+                                <img class="demo cursor" src="./Chegus Infotech_files/it.jpg" style="width:100%" onclick="currentSlide(11)">
+                            </div>
+                            <div class="column" style="display: none;">
+                                <img class="demo cursor" src="./Chegus Infotech_files/01(3).jpg" style="width:100%" onclick="currentSlide(2)">
+                            </div>
+                            <div class="column" style="display: none;">
+                                <img class="demo cursor" src="./Chegus Infotech_files/02(1).jpg" style="width:100%" onclick="currentSlide(3)">
+                            </div>
+                            <div class="column" style="display: none;">
+                                <img class="demo cursor" src="./Chegus Infotech_files/03.jpg" style="width:100%" onclick="currentSlide(4)">
+                            </div>
+                            <div class="column" style="display: none;">
+                                <img class="demo cursor" src="./Chegus Infotech_files/04.jpg" style="width:100%" onclick="currentSlide(5)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    It Seminar Ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--    <div id="slider1_container" style="position: relative; top: 20px; left: 100px; width: 900px; height: 500px; overflow: hidden; ">
+                    
+                            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                                    background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                                <div style="position: absolute; display: block; background: url(../../img/loading.gif) no-repeat center center;
+                                    top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                            </div>
+                    
+                        
+                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px; overflow: hidden;">
+                            <div>
+                                 <div id="sliderh3_container" class="sliderh3" style="position: relative; top: 0px; left: 0px; width: 900px;
+                                        height: 400px;">                 
+                                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px;
+                                            overflow: hidden;">                   
+                                             <div><img u="image" src="../../img/SOGAMatoffice/04.jpg" /></div>
+                                             <div><img u="image" src="../../img/SOGAMatoffice/01.jpg" /></div>
+                                              <div><img u="image" src="../../img/SOGAMatoffice/02.jpg" /></div>
+                                                  <div><img u="image" src="../../img/SOGAMatoffice/03.jpg" /></div>                   
+                                        </div>                    
+                                        <div u="navigator" class="jssorb03" style="bottom: 25px; right: 10px;">              
+                                            <div u="prototype"><div u="numbertemplate"></div></div>
+                                        </div>               
+                                    </div>
+                                    <div u="thumb">
+                                        <img src="../../img/nested-thumb/office.jpg" width=180 height=100/>
+                                        <div class="title_back"></div>
+                                        <div class="title"><b style="color:#000000">
+                                           Client at office <br/></b>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                    <div>
+                                    <div id="sliderh5_container" class="sliderh5" style="position: relative; top: 0px; left: 0px; width: 900px;
+                                        height: 400px;">
+                    
+                                      
+                                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px;
+                                            overflow: hidden;">
+                                 <div><img u="image" src="../../img/ITSeminar/01.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/02.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/03.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/04.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/05.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/06.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/07.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/08.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/09.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/10.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/11.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/12.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/13.jpg" /></div>
+                                  
+                                            <div><img u="image" src="../../img/ITSeminar/15.jpg" /></div>
+                                            <div><img u="image" src="../../img/ITSeminar/16.jpg" /></div>
+                                        </div>
+                                        
+                                        <div u="navigator" class="jssorb03" style="bottom: 25px; right: 10px;">
+                                   
+                                            <div u="prototype"><div u="numbertemplate"></div></div>
+                                        </div>
+                                   
+                                    </div>
+                                    <div u="thumb">
+                                        <img src="../../img/nested-thumb/it.jpg" width=180 height=100/>
+                                        <div class="title_back"></div>
+                                        <div class="title"><b style="color:#000000">
+                                            IT Seminar- Bangladesh <br/></b>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                        
+                    
+                                    <div>
+                                    <div id="sliderh4_container" class="sliderh4" style="position: relative; top: 0px; left: 0px; width: 900px;
+                                        height: 400px;">
+                    
+                                      
+                                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px;
+                                            overflow: hidden;">
+                                            <div><img u="image" src="../../img/AIO/01.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/02.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/03.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/04.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/05.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/06.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/07.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/08.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/09.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/10.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/11.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/12.jpg" /></div>
+                                            <div><img u="image" src="../../img/AIO/13.jpg" /></div>
+                                            
+                                        </div>
+                                        
+                                        <div u="navigator" class="jssorb03" style="bottom: 25px; right: 10px;">
+                                   
+                                            <div u="prototype"><div u="numbertemplate"></div></div>
+                                        </div>
+                                   
+                                    </div>
+                                    <div u="thumb">
+                                        <img src="../../img/nested-thumb/aio.jpg" width=180 height=100 />
+                                        <div class="title_back"></div>
+                                        <div class="title"><b style="color:#000000">
+                                            44th Conference, AIO, Kampala, Uganda</b>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                    
+                                <div>
+                                    <div id="sliderh1_container" class="sliderh1" style="position: relative; top: 0px; left: 0px; width: 900px;
+                                        height: 400px;">
+                    
+                                          <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px;
+                                            overflow: hidden;">
+                                             <div><img u="image" src="../../img/FANAF/01.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/02.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/03.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/04.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/05.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/06.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/07.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/08.jpg" /></div>   
+                                            <div><img u="image" src="../../img/FANAF/09.jpg" /></div>  
+                                            <div><img u="image" src="../../img/FANAF/10.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/11.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/12.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/13.jpg" /></div>
+                                            <div><img u="image" src="../../img/FANAF/14.jpg" /></div>   
+                                           
+                    
+                                        </div>
+                                      
+                                        
+                                        <div u="navigator" class="jssorb03" style="bottom: 25px; right: 10px;">
+                                            
+                                            <div u="prototype"><div u="numbertemplate"></div></div>
+                                        </div>
+                           
+                                    </div>
+                                    <div u="thumb">
+                                        <img src="../../img/nested-thumb/fanaf.jpg" width=180 height=100 />
+                                        <div class="title_back"></div>
+                                        <div class="title">41 FANAF - 2017, Marrakech, Morocco <br>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                    
+                                            
+                                            <div>
+                                    <div id="sliderh2_container" class="sliderh2" style="position: relative; top: 0px; left: 0px; width: 900px;
+                                        height: 400px;">
+                    
+                                         Slides Container 
+                                       <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 400px;
+                                            overflow: hidden;">
+                                            <div><img u="image" src="../../img/Dakar_Senegal/01.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/02.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/03.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/04.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/05.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/06.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/07.jpg" /></div>
+                                            <div><img u="image" src="../../img/Dakar_Senegal/08.jpg" /></div>   
+                                            <div><img u="image" src="../../img/Dakar_Senegal/09.jpg" /></div>
+                                                    
+                                        </div>
+                                       
+                                        <div u="navigator" class="jssorb03" style="bottom: 25px; right: 10px;">
+                                             bullet navigator item prototype 
+                                            <div u="prototype"><div u="numbertemplate"></div></div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div u="thumb">
+                                        <img src="../../img/nested-thumb/daker.jpg" width=180 height=100 />
+                                        <div class="title_back"></div>
+                                         <div class="title">21st African Reinsurance Forum in Dakar-Senegal <br>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                                
+                              
+                                
+                              
+                                    
+                                            
+                                            
+                                    
+                    
+                    
+                    
+                                
+                                
+                            </div>
+                           
+                           
+                            <div u="thumbnavigator" class="jssort16" style="left: 0px; bottom: 0px; top:400px;">
+                                 Thumbnail Item Skin Begin 
+                                <div u="slides" style="cursor: default;">
+                                    <div u="prototype" class=p>
+                                        <div u="thumbnailtemplate" class="t"></div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                          
+                    
+                           
+                            <script>
+                                jssor_slider1_starter('slider1_container');
+                            </script>
+                    
+                        </div>-->
+                </div></div></div>
+        <div class="copyright">©chegusinfotech. all right reserved.</div>
+
+    
+</body></html>

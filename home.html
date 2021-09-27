@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="New_Task">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New_Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row social">
+                <div class="col-md-10">
+                    <div class="socialicon">
+                        <input type="image" img src="image/socialmedia/fb.png">
+                        <input type="image" img src="image/socialmedia/tw.png">
+                        <input type="image" img src="image/socialmedia/gp.png">
+                        <input type="image" img src="image/socialmedia/linkedin2.png">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="language">
+                        <h6>French &nbsp;/&nbsp;Spanish</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="image/LOGO.png">
+                        </div>
+                        <ul>
+                            <li class="navbaractive">
+                                <a href="home.html">HOME</a>
+                                <a href="">ABOUT US</a>
+                                <ul class="subnav" style="display: none;">
+                                    <li>
+                                        <a href="Aboutus.html">About us</a>
+                                        <a href="">Management</a>
+                                    </li>
+                                </ul>
+                                <a href="visionandmission.html">VISION AND MISSION</a>
+                                <a href="career.html">CAREERS</a>
+                                <a href="">GALLERY</a>
+                                <a href="">PRODUCTS</a>
+                                <a href="#">NEWS</a>
+                                <a href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="slider" id="main-slider">
+                        <div class="slider-wrapper">
+                            <img src="image/slider/01.jpg" alt="First" class="slide" />
+                            <img src="image/slider/03.jpg" alt="Second" class="slide" />
+                            <img src="image/slider/02.jpg" alt="Third" class="slide" />
+                            <img src="image/slider/image-slider-4.jpg" alt="fourth" class="slide" />
+                            <img src="image/slider/04.jpg" alt="five" class="slide" />
+                        </div>
+                    </div>
+                
+                <div class="quotes">
+                    <p>Chegus InfoTech  is a product development oriented Software company focused on Core Insurance and Banking domains. Chegus is a privately owned Group which started its operations in 2008.</p>
+                    <p>The Software development business was conceptualized in Nov 2012 and  Chegus InfoTech was formed in March 2013 in the city of Bangalore, India . Currently, our focus  is development of applications related to Insurance industry and our next target is to expand into financial products for small &amp; medium scale financial institutions.</p></b>
+                <br>
+          
+                
+                  </div>
+                  </div>
+                <div class="col-sm-3 newsfeed">
+                    <u>NEWS</u>
+                    <marquee direction="up">
+                        <p style="color:#ff0000;">New***</p>
+                        <h6 style="color: #000; font-size: 13px;">Chegus Infotech organized.<strong
+                                style="color: #990000;">"IT Seminar in Association with ASSAR
+                                (Association des ASSUREURS du Rwanda) on on 18th September 2018".</strong></h6>
+                        <strong style="color:#008040;font-size: 13px;">Venue: UBUMWE Grande Hotel, Kigali City Center,
+                            Kigali, Rwanda.</strong>
+                        <br><br>
+
+                        <p style="color:#ff0000;">New***</p>
+                        <h6 style="color: #000; font-size: 13px;">Chegus Infotech organized.<strong
+                                style="color: #990000;">"The 45th AIO Conference and Annual General Assembly",
+                                From from 6th - 9th May 2018, at at Labadi Beach Hotel, Accra, Ghana".</strong></h6>
+                        <strong style="color:#008040;font-size: 13px;"> Theme: Innovation, Risk, and the Future of
+                            Insurance in Emerging Markets</strong>
+                        <br><br>
+
+                        <p style="color:#ff0000;">New***</p>
+                        <h6 style="color: #000; font-size: 13px;">Chegus Infotech organized.<strong
+                                style="color: #990000;">"The 42nd FANAF Conference and General Assembly",
+                                from 12th -15th February 2018 at Kigali Convention Center, Kigali, Rwanda.</strong></h6>
+                        <strong style="color:#008040;font-size: 13px;"> Theme: "African Insurance on the Disruption
+                            Test"</strong>
+                        <br><br>
+
+                    </marquee>
+
+
+
+
+                </div>
+            </div>
+        
+        
+          </div>
+    </section1>
+
+    
+       
+  
+
+
+
+    <script>
+        (function () {
+
+            function Slideshow(element) {
+                this.el = document.querySelector(element);
+                this.init();
+            }
+
+            Slideshow.prototype = {
+                init: function () {
+                    this.wrapper = this.el.querySelector(".slider-wrapper");
+                    this.slides = this.el.querySelectorAll(".slide");
+                    this.previous = this.el.querySelector(".slider-previous");
+                    this.next = this.el.querySelector(".slider-next");
+                    this.index = 0;
+                    this.total = this.slides.length;
+                    this.timer = null;
+
+                    this.action();
+                    this.stopStart();
+                },
+                _slideTo: function (slide) {
+                    var currentSlide = this.slides[slide];
+                    currentSlide.style.opacity = 1;
+
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides[i];
+                        if (slide !== currentSlide) {
+                            slide.style.opacity = 0;
+                        }
+                    }
+                },
+                action: function () {
+                    var self = this;
+                    self.timer = setInterval(function () {
+                        self.index++;
+                        if (self.index == self.slides.length) {
+                            self.index = 0;
+                        }
+                        self._slideTo(self.index);
+
+                    }, 3000);
+                },
+                stopStart: function () {
+                    var self = this;
+                    self.el.addEventListener("mouseover", function () {
+                        clearInterval(self.timer);
+                        self.timer = null;
+
+                    }, false);
+                    self.el.addEventListener("mouseout", function () {
+                        self.action();
+
+                    }, false);
+                }
+
+
+            };
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                var slider = new Slideshow("#main-slider");
+
+            });
+
+
+        })();
+
+    </script>
+
+
+</body>
+
+</html>
